@@ -1,8 +1,7 @@
-import * as React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import LittleLemonHeader from './components/LittleLemonHeader';
 import LittleLemonFooter from './components/LittleLemonFooter';
+import LittleLemonHeader from './components/LittleLemonHeader';
 import MenuItems from './components/MenuItems';
 
 export default function App() {
@@ -11,6 +10,7 @@ export default function App() {
       <View style={styles.container}>
         <LittleLemonHeader />
         <MenuItems />
+        <NavigationComponent />
       </View>
       <View style={styles.footerContainer}>
         <LittleLemonFooter />
